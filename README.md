@@ -156,11 +156,9 @@ Não é permitido registrar ocorrências com datas futuras.
 
 ## 📷 Diagrama UML
 
-Adicionar aqui a imagem do diagrama UML gerado no Draw.io.
-
 ```markdown
-![Diagrama UML](<img width="822" height="714" alt="Diagrama de Classes" src="https://github.com/user-attachments/assets/7f4102e6-a9e3-4490-abdf-711aa4c642e6" />
-)
+<img width="822" height="714" alt="Diagrama de Classes" src="https://github.com/user-attachments/assets/79df3a5a-68d7-4e41-996d-c03e8087454b" />
+
 ```
 
 ---
