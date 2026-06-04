@@ -152,16 +152,6 @@ Ocorrências com status:
 ### RN-004
 Não é permitido registrar ocorrências com datas futuras.
 
----
-
-## 📷 Diagrama UML
-
-```markdown
-## 📷 Diagrama UML
-
-![Diagrama UML](docs/Diagrama de Classes.png)
-
-```
 
 ---
 
