@@ -159,7 +159,7 @@ Não é permitido registrar ocorrências com datas futuras.
 ```markdown
 ## 📷 Diagrama UML
 
-![Diagrama UML](docs/Diagrama De Classes.png)
+![Diagrama UML](docs/Diagrama de Classes.png)
 
 ```
 
