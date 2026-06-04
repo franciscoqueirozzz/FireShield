@@ -1,4 +1,4 @@
-package br.com.fiap.bean.interfaces;
+package br.com.fiap.interfaces;
 
 /**
  * Interface que define as ações obrigatórias de monitoramento de incêndios.

@@ -1,6 +1,6 @@
 package br.com.fiap.bean;
 
-import br.com.fiap.bean.interfaces.AcoesMonitoramento;
+import br.com.fiap.interfaces.AcoesMonitoramento;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
