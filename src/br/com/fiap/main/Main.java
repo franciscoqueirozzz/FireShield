@@ -4,7 +4,6 @@ import br.com.fiap.bean.Operador;
 import br.com.fiap.bean.OcorrenciaIncendio;
 import br.com.fiap.bean.Regiao;
 import br.com.fiap.bean.Sensor;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
@@ -269,17 +268,6 @@ public class Main {
                                 ocorrenciaAtual = new OcorrenciaIncendio(
                                         idOcorrencia, dataOcorrencia, intensidade, status, regiao, sensorTemp, null
                                 );
-
-                                // Gera alerta automaticamente logo após o cadastro
-                                System.out.println();
-                                if (status.equals("EXTINTO")) {
-                                    System.out.println("Incêndio EXTINTO — alerta não gerado.");
-                                } else if (status.equals("CONTROLADO")) {
-                                    System.out.println("Incêndio CONTROLADO — alerta de emergência não gerado.");
-                                    System.out.println("Monitoramento preventivo recomendado.");
-                                } else {
-                                    ocorrenciaAtual.gerarAlerta();
-                                }
 
                                 System.out.println("\nOcorrência #" + idOcorrencia + " cadastrada com sucesso!");
                                 break;
