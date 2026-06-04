@@ -157,7 +157,9 @@ Não é permitido registrar ocorrências com datas futuras.
 ## 📷 Diagrama UML
 
 ```markdown
-<img width="822" height="714" alt="Diagrama de Classes" src="https://github.com/user-attachments/assets/79df3a5a-68d7-4e41-996d-c03e8087454b" />
+## 📷 Diagrama UML
+
+![Diagrama UML](docs/diagrama-uml.png)
 
 ```
 
