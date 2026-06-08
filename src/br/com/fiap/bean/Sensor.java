@@ -92,6 +92,11 @@ public class Sensor {
         System.out.println("Status     : " + status);
         System.out.println("--------------------------------------------------");
     }
+    // Metodo com o mesmo nome, mas recebe um parâmetro extra - String observação
+    public void registrarMedicao(double valorMedido, String observacao) {
+        System.out.println("\n[Nota do Sistema]: " + observacao);
+        registrarMedicao(valorMedido);
+    }
 
     // Classifica automaticamente a intensidade do incêndio
     public String classificarIntensidade() {

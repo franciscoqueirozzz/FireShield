@@ -59,7 +59,7 @@ public class Alerta {
         this.dataAlerta = dataAlerta;
     }
 
-    // Exibe as informações do alertadata no formato brasileiro
+    // Exibe as informações do alerta
     public void exibirAlerta() {
         DateTimeFormatter dtmf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         System.out.println("=== Alerta Gerado ===");

@@ -26,7 +26,7 @@ public class Main {
         int contadorOcorrencia = 0;
         int opcao = -1;
 
-        // ---- MENU INICIAL ----
+        //MENU INICIAL
         while (opcao != 0) {
             System.out.println("\n==================================================");
             System.out.println("          FireShield - Sistema de Monitoramento   ");
@@ -44,7 +44,7 @@ public class Main {
             switch (opcao) {
 
                 case 1:
-                    // ---- LOGIN ----
+                    //LOGIN
                     System.out.println("\n--- Login ---");
                     System.out.print("E-mail : ");
                     String emailDigitado = scanner.nextLine().trim();
@@ -68,7 +68,7 @@ public class Main {
 
                     System.out.println("\nBem-vindo(a), " + operadorLogado.getNome() + "!");
 
-                    // ---- MENU PRINCIPAL ----
+                    //MENU PRINCIPAL
                     int opcaoMenu = -1;
 
                     while (opcaoMenu != 0) {
@@ -91,7 +91,7 @@ public class Main {
                         switch (opcaoMenu) {
 
                             case 1:
-                                // ---- CADASTRAR OCORRÊNCIA ----
+                                //CADASTRAR OCORRÊNCIA
                                 System.out.println("\n--- Cadastrar Ocorrência de Incêndio ---");
 
                                 contadorOcorrencia++;
@@ -163,7 +163,7 @@ public class Main {
 
                                 Regiao regiao = new Regiao(idOcorrencia, nomeRegiao, pais, areaKm2);
 
-                                // ---- DADOS DO SENSOR ----
+                                //DADOS DO SENSOR
                                 System.out.println("\n-- Dados do Sensor --");
                                 System.out.print("Fabricante: ");
                                 String fabricante = scanner.nextLine().trim();
@@ -238,7 +238,8 @@ public class Main {
                                 Sensor sensorFumaca  = new Sensor(idOcorrencia, "FUMACA",      fabricante, statusSensor);
                                 Sensor sensorUmidade = new Sensor(idOcorrencia, "UMIDADE",     fabricante, statusSensor);
 
-                                sensorTemp.registrarMedicao(valorTemp);
+                                // Aqui chamamos o metodo com sobrecarga
+                                sensorTemp.registrarMedicao(valorTemp, "Medição prioritária de temperatura de campo.");
                                 sensorFumaca.registrarMedicao(valorFumaca);
                                 sensorUmidade.registrarMedicao(valorUmidade);
 
@@ -273,7 +274,7 @@ public class Main {
                                 break;
 
                             case 2:
-                                // ---- CLASSIFICAR RISCO ----
+                                //CLASSIFICAR RISCO
                                 if (ocorrenciaAtual == null) {
                                     System.out.println("\nNenhuma ocorrência cadastrada ainda.");
                                 } else if (ocorrenciaAtual.getStatus().equals("EXTINTO")) {
@@ -290,7 +291,7 @@ public class Main {
                                 break;
 
                             case 3:
-                                // ---- GERAR ALERTA ----
+                                //GERAR ALERTA
                                 if (ocorrenciaAtual == null) {
                                     System.out.println("\nNenhuma ocorrência cadastrada ainda.");
                                 } else if (ocorrenciaAtual.getStatus().equals("EXTINTO")) {
@@ -319,7 +320,7 @@ public class Main {
                                 break;
 
                             case 4:
-                                // ---- DASHBOARD ----
+                                //DASHBOARD
                                 System.out.println("\n==================================================");
                                 System.out.println("                DASHBOARD FIRESHIELD              ");
                                 System.out.println("==================================================");
