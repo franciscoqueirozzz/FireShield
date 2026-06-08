@@ -2,8 +2,7 @@ package br.com.fiap.bean;
 
 /**
  * Representa um sensor de campo utilizado para detectar incêndios florestais.
- * Agora armazena o último valor medido e classifica a intensidade automaticamente.
- */
+ **/
 public class Sensor {
 
     // Atributos da classe
